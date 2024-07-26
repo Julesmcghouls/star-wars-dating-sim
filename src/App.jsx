@@ -1,17 +1,24 @@
 import React from 'react';
 import CharacterCard from './components/CharacterCard';
+import DialogueBox from './components/DialogueBox';
 
 function App() {
+
+
   const characterData = {
-    name: 'Luke Skywalker',
-    image: 'https://starwars-visualguide.com/assets/img/characters/1.jpg',
-    species: 'Human'
+    name: 'R2-D2',
+    image: 'https://starwars-visualguide.com/assets/img/characters/3.jpg',
+    species: 'Sexy Robot',
   };
 
+  const dialogue = "*Happy Beeps*";
+
   return (
-    <div className="App">
+    <><div className="App">
       <CharacterCard character={characterData} />
-    </div>
+    </div><div>
+        <DialogueBox dialogue={dialogue} />
+      </div></>
   );
 }
 
